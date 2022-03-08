@@ -14,10 +14,12 @@ span {
 .layer {
     color: rgb(241, 144, 152);
     transition: all 0.3s linear;
+    animation: ok 0.3s linear infinite;
 }
 .laye {
     position:absolute;
-    font-size:10em;
+    font-size:3em;
+    top: 100px;
     transform: scale(1);
     animation: anime 0.3s linear infinite;
 }
@@ -27,6 +29,14 @@ div {
     display: flex;
     justify-content: center;
 }
+/* @keyframes ok{
+    0% {
+        transform: translate(0,0)
+    }
+    100% {
+        transform: translate(100px, -100px)
+    }
+} */
 @keyframes anime{
     0% {
         transform: scale(1);
@@ -42,10 +52,20 @@ section {
     position: relative;
     width: 100%;
     height: 100vh;
+    top: -170px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.container {
+    position: absolute;
+    top: 300px;
+    position: absolute;
+    font-size: 4em;
+    color: rgb(255, 234, 50);
+    text-align: center;
+    max-width: 100%;
 }
 section h2 {
     position: absolute;
@@ -58,13 +78,17 @@ section h2 {
     top: -100px;
 }
 img {
-    width: 200px;
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+    margin-left: 10px;
+    border-radius: 20px;
 }
 @media (max-width: 768px) {
     img{
         width: 100px;
     }
     .layee {
-        font-size: 30px;
+        font-size: 35px;
     }
 }
