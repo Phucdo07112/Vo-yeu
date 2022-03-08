@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+body {
+    background-color: rgb(233, 129, 129);
+}
+span {
+    color: rgb(241, 32, 32);
+}
+.layer {
+    color: rgb(241, 144, 152);
+    transition: all 0.3s linear;
+}
+.laye {
+    position:absolute;
+    font-size:10em;
+    transform: scale(1);
+    animation: anime 0.3s linear infinite;
+}
+div {
+    position:absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+@keyframes anime{
+    0% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section h2 {
+    position: absolute;
+    font-size: 4em;
+    color: rgb(255, 234, 50);
+    text-align: center;
+    max-width: 100%;
+}
+.layee {
+    top: -100px;
+}
+img {
+    width: 200px;
+}
+@media (max-width: 768px) {
+    img{
+        width: 100px;
+    }
+    .layee {
+        font-size: 30px;
+    }
+}
